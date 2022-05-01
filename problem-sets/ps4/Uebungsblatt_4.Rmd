@@ -46,7 +46,7 @@ library(stargazer)
 a) Im ersten Schritt laden wir die zur Verfuegung stehenden Daten. Laden Sie die unter Daten bereitgestellten `EU_Makro.csv` Daten in R.
 
 ```{r "1_a"}
-____ <- read_csv("____")
+EU_Makro <- read_csv("EU_Makro")
 
 # enter your code here ...
 
