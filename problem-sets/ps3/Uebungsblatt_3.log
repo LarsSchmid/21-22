@@ -1,0 +1,18 @@
+{"type":["init_ps"],"time":["2021-11-05 12:05:28"],"user":["Lars Schmid"],"umph":[1636110328.0088],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2021-11-05 12:05:28"],"user":["Lars Schmid"],"umph":[1636110328.0488],"ok":[true],"chunk":[1],"ex":[1],"e.ind":[0],"code":["library(tidyverse)\nlibrary(pander)\nlibrary(sf)\nlibrary(gganimate)\nlibrary(ggrepel)\nlibrary(skimr)\nlibrary(RColorBrewer)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2021-11-05 12:05:28"],"user":["Lars Schmid"],"umph":[1636110328.3603],"ok":[false],"chunk":[2],"ex":[1],"e.ind":[0],"code":[".PH_.__ <- read_csv(\".PH_.__\")\n\n# enter your code here ...\n"],"message":["evaluation error in \n  ____ <- read_csv(\"____\")\n  Error: '____' does not exist in current working directory ('C:/Users/Admin/Documents/GitHub/21-22/problem-sets/ps3').\n"]}
+,
+{"type":["check_ps"],"time":["2021-11-05 16:15:35"],"user":["Lars Schmid"],"umph":[1636125335.3343],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2021-11-05 16:15:35"],"user":["Lars Schmid"],"umph":[1636125335.3504],"ok":[false],"chunk":[2],"ex":[1],"e.ind":[0],"code":["EU_Makro <- read_csv(\"data/Eu_Makro\")\n\n# enter your code here ...\n"],"message":["evaluation error in \n  EU_Makro <- read_csv(\"data/Eu_Makro\")\n  Error: 'data/Eu_Makro' does not exist in current working directory ('C:/Users/Admin/Documents/GitHub/21-22/problem-sets/ps3').\n"]}
+,
+{"type":["check_ps"],"time":["2021-11-05 16:17:05"],"user":["Lars Schmid"],"umph":[1636125425.5012],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2021-11-05 16:17:05"],"user":["Lars Schmid"],"umph":[1636125425.5162],"ok":[false],"chunk":[2],"ex":[1],"e.ind":[0],"code":["EU_Makro <- read_csv(\"data/EU_Makro\")\n\n# enter your code here ...\n"],"message":["evaluation error in \n  EU_Makro <- read_csv(\"data/EU_Makro\")\n  Error: 'data/EU_Makro' does not exist in current working directory ('C:/Users/Admin/Documents/GitHub/21-22/problem-sets/ps3').\n"]}
+,
+{"type":["check_ps"],"time":["2021-11-05 16:17:47"],"user":["Lars Schmid"],"umph":[1636125467.3135],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2021-11-05 16:17:47"],"user":["Lars Schmid"],"umph":[1636125467.3826],"ok":[false],"chunk":[2],"ex":[1],"e.ind":[1],"code":["EU_Makro <- read_csv(\"data/EU_Makro.csv\")\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to eu_makro in chunk 1___Deskriptive_Anal_a."]}
+,

@@ -1,7 +1,7 @@
 
 ```{r 'check_ps', include=FALSE}
 
-user.name = 'ENTER A USER NAME HERE' # set to your user name
+user.name = 'Lars Schmid' # set to your user name
 
 # To check your problem set, run the 
 # RStudio Addin 'Check Problemset'
@@ -65,7 +65,7 @@ library(RColorBrewer)
 a) Im ersten Schritt laden wir die zur Verfuegung stehenden Daten. Laden Sie die im Unterordner "Daten" bereitgestellten Datei `EU_Makro.csv` in R ein. Ergaenzen Sie hierfuer unten stehende Code-Zeile.
 
 ```{r "1___Deskriptive_Anal_a"}
-____ <- read_csv("____")
+EU_Makro <- read_csv("data/EU_Makro.csv")
 
 # enter your code here ...
 
