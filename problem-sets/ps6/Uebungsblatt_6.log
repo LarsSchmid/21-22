@@ -1,0 +1,504 @@
+{"type":["init_ps"],"time":["2022-05-16 10:39:50"],"user":["Lars Schmid"],"umph":[1652690390.7203],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:39:50"],"user":["Lars Schmid"],"umph":[1652690390.7613],"ok":[false],"chunk":[1],"ex":[1],"e.ind":[1],"code":["\n\"1\"\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_a."]}
+,
+{"type":["hint"],"time":["2022-05-16 10:40:22"],"user":["Lars Schmid"],"umph":[1652690422.215],"ok":[true],"chunk":[1],"ex":[1],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:40:31"],"user":["Lars Schmid"],"umph":[1652690431.9088],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:40:31"],"user":["Lars Schmid"],"umph":[1652690431.9258],"ok":[false],"chunk":[1],"ex":[1],"e.ind":[1],"code":["\n1\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_a."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:40:50"],"user":["Lars Schmid"],"umph":[1652690450.9912],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:40:51"],"user":["Lars Schmid"],"umph":[1652690451.0062],"ok":[true],"chunk":[1],"ex":[1],"e.ind":[0],"code":["\n2\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:40:51"],"user":["Lars Schmid"],"umph":[1652690451.0162],"ok":[false],"chunk":[2],"ex":[1],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_b."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:41:13"],"user":["Lars Schmid"],"umph":[1652690473.8215],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:41:13"],"user":["Lars Schmid"],"umph":[1652690473.8347],"ok":[true],"chunk":[2],"ex":[1],"e.ind":[0],"code":["\n\"nein\"\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:41:15"],"user":["Lars Schmid"],"umph":[1652690475.6298],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["thp <- read_csv(\"./data/THP_clean.csv\") %>%\n  select(newid, uc, depressed_1y, treat, age_baseline, age_baseline_sq, kids_no, famstruct_baseline, grandmother_baseline, edu_mo, edu_fa, employed_mo_baseline, incomeindex, depindex_0, mspss_tot)\n\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_c."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:41:42"],"user":["Lars Schmid"],"umph":[1652690502.1987],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:41:43"],"user":["Lars Schmid"],"umph":[1652690503.6206],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["thp <- read_csv(\"./data/THP_clean.csv\") %>%\n  select(newid, uc, depressed_1y, treat, age_baseline, age_baseline_sq, kids_no, famstruct_baseline, grandmother_baseline, edu_mo, edu_fa, employed_mo_baseline, incomeindex, depindex_0, mspss_tot)\n\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_c."]}
+,
+{"type":["hint"],"time":["2022-05-16 10:41:50"],"user":["Lars Schmid"],"umph":[1652690510.0285],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[2]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:42:12"],"user":["Lars Schmid"],"umph":[1652690532.513],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:42:13"],"user":["Lars Schmid"],"umph":[1652690533.8332],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[0],"code":["thp <- read_csv(\"./data/THP_clean.csv\") %>%\n  select(newid, uc, depressed_1y, treat, age_baseline, age_baseline_sq, kids_no, famstruct_baseline, grandmother_baseline, edu_mo, edu_fa, employed_mo_baseline, incomeindex, depindex_0, mspss_tot)\n\nskim(thp)\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:42:13"],"user":["Lars Schmid"],"umph":[1652690533.8472],"ok":[false],"chunk":[4],"ex":[1],"e.ind":[1],"code":["thp_plots <- thp %>%\n  mutate(treat_factor = as.factor(ifelse(treat == 1 , \"Treatment\", \"Kontrolle\")),\n         depressed = as.factor(ifelse(depressed_1y == 0, \"keine Depressionen\", \"Depressionen\"))) %>%\n  filter( !is.na(depressed)) \n#plot_prop_depression <- ggplot(___, aes(x = ___, fill = ___)) +\n#  geom_bar(position = \"fill\") +\n#  labs(x = NULL, y = \"Anteil an Depressionen\", fill = NULL) +\n#  scale_fill_manual(values = c(\"darkblue\", \"darkred\"))\n\n#plot_prop_depression\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to plot_prop_depression in chunk 1_d."]}
+,
+{"type":["hint"],"time":["2022-05-16 10:42:46"],"user":["Lars Schmid"],"umph":[1652690566.1882],"ok":[true],"chunk":[4],"ex":[1],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:45:51"],"user":["Lars Schmid"],"umph":[1652690751.9001],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:45:51"],"user":["Lars Schmid"],"umph":[1652690751.9171],"ok":[false],"chunk":[4],"ex":[1],"e.ind":[1],"code":["thp_plots <- thp %>%\n  mutate(treat_factor = as.factor(ifelse(treat == 1 , \"Treatment\", \"Kontrolle\")),\n         depressed = as.factor(ifelse(depressed_1y == 0, \"keine Depressionen\", \"Depressionen\"))) %>%\n  filter( !is.na(depressed)) \n#plot_prop_depression <- ggplot(thp_plots, aes(x = depressed, fill = treat_factor)) +\n#  geom_bar(position = \"fill\") +\n#  labs(x = NULL, y = \"Anteil an Depressionen\", fill = NULL) +\n#  scale_fill_manual(values = c(\"darkblue\", \"darkred\"))\n\n#plot_prop_depression\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to plot_prop_depression in chunk 1_d."]}
+,
+{"type":["hint"],"time":["2022-05-16 10:46:06"],"user":["Lars Schmid"],"umph":[1652690766.0956],"ok":[true],"chunk":[4],"ex":[1],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:46:29"],"user":["Lars Schmid"],"umph":[1652690789.8352],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:46:29"],"user":["Lars Schmid"],"umph":[1652690789.9963],"ok":[true],"chunk":[4],"ex":[1],"e.ind":[0],"code":["thp_plots <- thp %>%\n  mutate(treat_factor = as.factor(ifelse(treat == 1 , \"Treatment\", \"Kontrolle\")),\n         depressed = as.factor(ifelse(depressed_1y == 0, \"keine Depressionen\", \"Depressionen\"))) %>%\n  filter( !is.na(depressed)) \nplot_prop_depression <- ggplot(thp_plots, aes(x = depressed, fill = treat_factor)) +\n  geom_bar(position = \"fill\") +\n  labs(x = NULL, y = \"Anteil an Depressionen\", fill = NULL) +\n  scale_fill_manual(values = c(\"darkblue\", \"darkred\"))\n\nplot_prop_depression\n\n\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:46:30"],"user":["Lars Schmid"],"umph":[1652690790.0043],"ok":[false],"chunk":[5],"ex":[1],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_e."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:46:48"],"user":["Lars Schmid"],"umph":[1652690808.0317],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:46:48"],"user":["Lars Schmid"],"umph":[1652690808.0447],"ok":[true],"chunk":[5],"ex":[1],"e.ind":[0],"code":["\n\"ja\"\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:46:48"],"user":["Lars Schmid"],"umph":[1652690808.0537],"ok":[false],"chunk":[6],"ex":[1],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_f."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:47:10"],"user":["Lars Schmid"],"umph":[1652690830.0742],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:47:10"],"user":["Lars Schmid"],"umph":[1652690830.0886],"ok":[false],"chunk":[6],"ex":[1],"e.ind":[1],"code":["\"unterschätzen\"\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_f."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:47:24"],"user":["Lars Schmid"],"umph":[1652690844.0184],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:47:24"],"user":["Lars Schmid"],"umph":[1652690844.0314],"ok":[false],"chunk":[6],"ex":[1],"e.ind":[1],"code":["\"überschätzen\"\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_f."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:47:43"],"user":["Lars Schmid"],"umph":[1652690863.9394],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:47:44"],"user":["Lars Schmid"],"umph":[1652690864.0705],"ok":[true],"chunk":[7],"ex":[1],"e.ind":[0],"code":["thp %>% \n  pivot_longer(cols = -treat, names_to = \"variable\", values_to = \"value\") %>%\n  group_nest(variable) %>%\n  mutate(t.test = map(data, ~tidy(t.test(value ~ treat, data = .x)))) %>%\n  unnest(t.test) %>%\n  mutate( Mean_Treatment = round(estimate2, 2),\n          Mean_Kontrolle = round(estimate1, 2),\n    Differenz = round(estimate, 4),\n          Signifikanz = round(p.value,4)) %>%\n  select(variable, Mean_Treatment, Mean_Kontrolle, Differenz, Signifikanz)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:47:44"],"user":["Lars Schmid"],"umph":[1652690864.0795],"ok":[false],"chunk":[8],"ex":[1],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_g."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:48:25"],"user":["Lars Schmid"],"umph":[1652690905.9925],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:48:26"],"user":["Lars Schmid"],"umph":[1652690906.0055],"ok":[true],"chunk":[8],"ex":[1],"e.ind":[0],"code":["\n3\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:48:26"],"user":["Lars Schmid"],"umph":[1652690906.0255],"ok":[false],"chunk":[9],"ex":[1],"e.ind":[3],"code":["reg1 <- lm(depressed_1y ~ treat, data=thp)\nreg2 <- lm(depressed_1y ~ treat + depindex_0, data=thp)\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to reg3 in chunk 1_h."]}
+,
+{"type":["hint"],"time":["2022-05-16 10:50:49"],"user":["Lars Schmid"],"umph":[1652691049.1452],"ok":[true],"chunk":[9],"ex":[1],"e.ind":[3]}
+,
+{"type":["hint"],"time":["2022-05-16 10:52:40"],"user":["Lars Schmid"],"umph":[1652691160.5986],"ok":[true],"chunk":[9],"ex":[1],"e.ind":[3]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:54:35"],"user":["Lars Schmid"],"umph":[1652691275.6721],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:54:35"],"user":["Lars Schmid"],"umph":[1652691275.7001],"ok":[true],"chunk":[9],"ex":[1],"e.ind":[0],"code":["reg1 <- lm(depressed_1y ~ treat, data=thp)\nreg2 <- lm(depressed_1y ~ treat + depindex_0, data=thp)\n\nreg3 <- lm(depressed_1y ~ treat + depindex_0 + age_baseline + age_baseline_sq + kids_no + famstruct_baseline + grandmother_baseline + edu_mo + edu_fa + employed_mo_baseline + incomeindex + mspss_tot, data=thp )\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:54:36"],"user":["Lars Schmid"],"umph":[1652691276.2911],"ok":[true],"chunk":[10],"ex":[1],"e.ind":[0],"code":["stargazer( reg1, reg2, reg3 ,type = \"text\",  digits=2, omit.stat = c(\"f\",\"ser\"))"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:54:36"],"user":["Lars Schmid"],"umph":[1652691276.3001],"ok":[false],"chunk":[11],"ex":[1],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_i_2."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:54:57"],"user":["Lars Schmid"],"umph":[1652691297.7076],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:54:57"],"user":["Lars Schmid"],"umph":[1652691297.7206],"ok":[false],"chunk":[11],"ex":[1],"e.ind":[1],"code":["\n2\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_i_2."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:55:07"],"user":["Lars Schmid"],"umph":[1652691307.3091],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:55:07"],"user":["Lars Schmid"],"umph":[1652691307.3221],"ok":[false],"chunk":[11],"ex":[1],"e.ind":[1],"code":["\n4\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_i_2."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:55:16"],"user":["Lars Schmid"],"umph":[1652691316.3505],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:55:16"],"user":["Lars Schmid"],"umph":[1652691316.3635],"ok":[false],"chunk":[11],"ex":[1],"e.ind":[1],"code":["\n1\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_i_2."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:55:25"],"user":["Lars Schmid"],"umph":[1652691325.9868],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:55:25"],"user":["Lars Schmid"],"umph":[1652691325.9988],"ok":[false],"chunk":[11],"ex":[1],"e.ind":[1],"code":["\n3\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_i_2."]}
+,
+{"type":["hint"],"time":["2022-05-16 10:55:40"],"user":["Lars Schmid"],"umph":[1652691340.3531],"ok":[true],"chunk":[11],"ex":[1],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:56:03"],"user":["Lars Schmid"],"umph":[1652691363.3174],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:56:03"],"user":["Lars Schmid"],"umph":[1652691363.3314],"ok":[false],"chunk":[11],"ex":[1],"e.ind":[1],"code":["\nc(1,2,3,4)\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_i_2."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:56:17"],"user":["Lars Schmid"],"umph":[1652691377.4318],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:56:17"],"user":["Lars Schmid"],"umph":[1652691377.4448],"ok":[false],"chunk":[11],"ex":[1],"e.ind":[1],"code":["\nc(1,2,3)\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_i_2."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:56:30"],"user":["Lars Schmid"],"umph":[1652691390.7944],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:56:30"],"user":["Lars Schmid"],"umph":[1652691390.8194],"ok":[false],"chunk":[11],"ex":[1],"e.ind":[1],"code":["\nc(1,2)\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_i_2."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:56:38"],"user":["Lars Schmid"],"umph":[1652691398.3815],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:56:38"],"user":["Lars Schmid"],"umph":[1652691398.4005],"ok":[false],"chunk":[11],"ex":[1],"e.ind":[1],"code":["\nc(1)\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_i_2."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:56:49"],"user":["Lars Schmid"],"umph":[1652691409.877],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:56:49"],"user":["Lars Schmid"],"umph":[1652691409.891],"ok":[false],"chunk":[11],"ex":[1],"e.ind":[1],"code":["\nc(1)\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_i_2."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:56:57"],"user":["Lars Schmid"],"umph":[1652691417.4429],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:56:57"],"user":["Lars Schmid"],"umph":[1652691417.4569],"ok":[false],"chunk":[11],"ex":[1],"e.ind":[1],"code":["\nc(2)\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_i_2."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:57:06"],"user":["Lars Schmid"],"umph":[1652691426.1756],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:57:06"],"user":["Lars Schmid"],"umph":[1652691426.1906],"ok":[false],"chunk":[11],"ex":[1],"e.ind":[1],"code":["\nc(2)\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_i_2."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:57:15"],"user":["Lars Schmid"],"umph":[1652691435.8004],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:57:15"],"user":["Lars Schmid"],"umph":[1652691435.8144],"ok":[false],"chunk":[11],"ex":[1],"e.ind":[1],"code":["\nc(3)\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_i_2."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:57:23"],"user":["Lars Schmid"],"umph":[1652691443.2925],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:57:23"],"user":["Lars Schmid"],"umph":[1652691443.3065],"ok":[false],"chunk":[11],"ex":[1],"e.ind":[1],"code":["\nc(4)\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_i_2."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:57:30"],"user":["Lars Schmid"],"umph":[1652691450.0392],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:57:30"],"user":["Lars Schmid"],"umph":[1652691450.0538],"ok":[false],"chunk":[11],"ex":[1],"e.ind":[1],"code":["\nc(4)\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_i_2."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:57:40"],"user":["Lars Schmid"],"umph":[1652691460.3442],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:57:40"],"user":["Lars Schmid"],"umph":[1652691460.3612],"ok":[false],"chunk":[11],"ex":[1],"e.ind":[1],"code":["\nc(1,2)\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_i_2."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:57:50"],"user":["Lars Schmid"],"umph":[1652691470.2736],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:57:50"],"user":["Lars Schmid"],"umph":[1652691470.2982],"ok":[false],"chunk":[11],"ex":[1],"e.ind":[1],"code":["\nc(1,3)\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_i_2."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:58:00"],"user":["Lars Schmid"],"umph":[1652691480.3478],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:58:00"],"user":["Lars Schmid"],"umph":[1652691480.3618],"ok":[false],"chunk":[11],"ex":[1],"e.ind":[1],"code":["\nc(1,4)\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_i_2."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:58:12"],"user":["Lars Schmid"],"umph":[1652691492.4872],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:58:12"],"user":["Lars Schmid"],"umph":[1652691492.5022],"ok":[false],"chunk":[11],"ex":[1],"e.ind":[1],"code":["\nc(1,2,3)\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_i_2."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:58:22"],"user":["Lars Schmid"],"umph":[1652691502.5798],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:58:22"],"user":["Lars Schmid"],"umph":[1652691502.5938],"ok":[false],"chunk":[11],"ex":[1],"e.ind":[1],"code":["\nc(1,2,4)\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_i_2."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:58:37"],"user":["Lars Schmid"],"umph":[1652691517.5676],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:58:37"],"user":["Lars Schmid"],"umph":[1652691517.5816],"ok":[false],"chunk":[11],"ex":[1],"e.ind":[1],"code":["\nc(1,3,4)\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_i_2."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:58:49"],"user":["Lars Schmid"],"umph":[1652691529.5023],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:58:49"],"user":["Lars Schmid"],"umph":[1652691529.5153],"ok":[false],"chunk":[11],"ex":[1],"e.ind":[1],"code":["\nc(1,2,3,4)\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_i_2."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:59:02"],"user":["Lars Schmid"],"umph":[1652691542.947],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:59:02"],"user":["Lars Schmid"],"umph":[1652691542.961],"ok":[false],"chunk":[11],"ex":[1],"e.ind":[1],"code":["\nc(2,3)\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_i_2."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:59:12"],"user":["Lars Schmid"],"umph":[1652691552.1527],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:59:12"],"user":["Lars Schmid"],"umph":[1652691552.1657],"ok":[true],"chunk":[11],"ex":[1],"e.ind":[0],"code":["\nc(2,4)\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:59:12"],"user":["Lars Schmid"],"umph":[1652691552.1747],"ok":[false],"chunk":[12],"ex":[1],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_j."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:59:47"],"user":["Lars Schmid"],"umph":[1652691587.8349],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:59:47"],"user":["Lars Schmid"],"umph":[1652691587.8489],"ok":[false],"chunk":[12],"ex":[1],"e.ind":[1],"code":["\n3\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_j."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 10:59:56"],"user":["Lars Schmid"],"umph":[1652691596.1118],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 10:59:56"],"user":["Lars Schmid"],"umph":[1652691596.1258],"ok":[false],"chunk":[12],"ex":[1],"e.ind":[1],"code":["\n1\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_j."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:00:04"],"user":["Lars Schmid"],"umph":[1652691604.9766],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:00:04"],"user":["Lars Schmid"],"umph":[1652691604.9896],"ok":[true],"chunk":[12],"ex":[1],"e.ind":[0],"code":["\n2\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:00:06"],"user":["Lars Schmid"],"umph":[1652691606.7428],"ok":[true],"chunk":[13],"ex":[2],"e.ind":[0],"code":["library(AER)\ndata(Fertility)\nhead(Fertility)\nskim(Fertility)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:00:06"],"user":["Lars Schmid"],"umph":[1652691606.7518],"ok":[false],"chunk":[14],"ex":[2],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_a_2."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:00:14"],"user":["Lars Schmid"],"umph":[1652691614.4644],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:00:14"],"user":["Lars Schmid"],"umph":[1652691614.4774],"ok":[false],"chunk":[12],"ex":[1],"e.ind":[1],"code":["\n3\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_j."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:00:25"],"user":["Lars Schmid"],"umph":[1652691625.7651],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:00:25"],"user":["Lars Schmid"],"umph":[1652691625.7781],"ok":[true],"chunk":[12],"ex":[1],"e.ind":[0],"code":["\n2\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:00:25"],"user":["Lars Schmid"],"umph":[1652691625.8181],"ok":[false],"chunk":[15],"ex":[2],"e.ind":[1],"code":["Fertility <- Fertility %>%\n  mutate(work01 = case_when(work > 0 ~ 1,\n                            work == 0 ~ 0))\n\n# enter your code here ...\n\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to reg1 in chunk 2_b."]}
+,
+{"type":["hint"],"time":["2022-05-16 11:00:32"],"user":["Lars Schmid"],"umph":[1652691632.8269],"ok":[true],"chunk":[15],"ex":[2],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:01:41"],"user":["Lars Schmid"],"umph":[1652691701.0981],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:01:41"],"user":["Lars Schmid"],"umph":[1652691701.1111],"ok":[true],"chunk":[14],"ex":[2],"e.ind":[0],"code":["\n2\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:01:41"],"user":["Lars Schmid"],"umph":[1652691701.1491],"ok":[false],"chunk":[15],"ex":[2],"e.ind":[1],"code":["Fertility <- Fertility %>%\n  mutate(work01 = case_when(work > 0 ~ 1,\n                            work == 0 ~ 0))\n\n# enter your code here ...\n\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to reg1 in chunk 2_b."]}
+,
+{"type":["hint"],"time":["2022-05-16 11:03:54"],"user":["Lars Schmid"],"umph":[1652691834.1339],"ok":[true],"chunk":[15],"ex":[2],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:04:38"],"user":["Lars Schmid"],"umph":[1652691878.3372],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:04:39"],"user":["Lars Schmid"],"umph":[1652691879.0478],"ok":[true],"chunk":[15],"ex":[2],"e.ind":[0],"code":["Fertility <- Fertility %>%\n  mutate(work01 = case_when(work > 0 ~ 1,\n                            work == 0 ~ 0))\n\nreg1 <- lm(work01 ~ morekids, data = Fertility)\n\n\nsummary(reg1)\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:04:39"],"user":["Lars Schmid"],"umph":[1652691879.0568],"ok":[false],"chunk":[16],"ex":[2],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_c."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:04:51"],"user":["Lars Schmid"],"umph":[1652691891.5211],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:04:51"],"user":["Lars Schmid"],"umph":[1652691891.5341],"ok":[false],"chunk":[16],"ex":[2],"e.ind":[1],"code":["\n3\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_c."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:05:01"],"user":["Lars Schmid"],"umph":[1652691901.1218],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:05:01"],"user":["Lars Schmid"],"umph":[1652691901.1348],"ok":[false],"chunk":[16],"ex":[2],"e.ind":[1],"code":["\n1\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_c."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:05:10"],"user":["Lars Schmid"],"umph":[1652691910.8516],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:05:10"],"user":["Lars Schmid"],"umph":[1652691910.8656],"ok":[true],"chunk":[16],"ex":[2],"e.ind":[0],"code":["\n2\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:05:11"],"user":["Lars Schmid"],"umph":[1652691911.4154],"ok":[true],"chunk":[17],"ex":[2],"e.ind":[0],"code":["grViz('digraph G {\n\nx [label=\"erklärende Variable x\"]\ny [label=\"abhängige Variable y\"]\nz [label=\"Instrument z\"]\n\nx -> y [label=\"+\"];\nz -> x [label=\"+\"];\nz -> y [label=\"+\"];\n}')"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:05:11"],"user":["Lars Schmid"],"umph":[1652691911.4574],"ok":[true],"chunk":[18],"ex":[2],"e.ind":[0],"code":["grViz('digraph G {\n\nx [label=\"erklärende Variable x\"]\ny [label=\"abhängige Variable y\"]\nz [label=\"Instrument z\"]\n\nx -> y [label=\"-\"];\nz -> y [label=\"+\"];\n}')"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:05:11"],"user":["Lars Schmid"],"umph":[1652691911.5018],"ok":[true],"chunk":[19],"ex":[2],"e.ind":[0],"code":["grViz('digraph G {\n\nx [label=\"erklärende Variable x\"]\ny [label=\"abhängige Variable y\"]\nz [label=\"Instrument z\"]\n\nx -> y [label=\"-\"];\nz -> x [label=\"+\"];\n}')"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:05:11"],"user":["Lars Schmid"],"umph":[1652691911.5208],"ok":[false],"chunk":[20],"ex":[2],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_d_4."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:05:37"],"user":["Lars Schmid"],"umph":[1652691937.722],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:05:37"],"user":["Lars Schmid"],"umph":[1652691937.735],"ok":[true],"chunk":[20],"ex":[2],"e.ind":[0],"code":["\n3\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:05:38"],"user":["Lars Schmid"],"umph":[1652691938.4878],"ok":[true],"chunk":[21],"ex":[2],"e.ind":[0],"code":["Fertility <- Fertility %>%\n  mutate(morekids = ifelse(morekids== \"yes\", 1, 0)) %>%\n  mutate(afam = ifelse(afam== \"yes\", 1, 0)) %>%\n  mutate(same_sex = ifelse(gender1== gender2, 1, 0))\n  \nreg1 <-  Fertility %>%\n  lm(morekids ~ gender2, data=.)\n\nreg2 <- Fertility %>%\n  lm(morekids ~ afam, data=.)\n\n reg3 <- Fertility %>%\n  lm(morekids ~ same_sex, data=.)\n\n stargazer(reg1, reg2, reg3, type = \"text\", digits=3)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:05:38"],"user":["Lars Schmid"],"umph":[1652691938.4978],"ok":[false],"chunk":[22],"ex":[2],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_e_2."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:06:11"],"user":["Lars Schmid"],"umph":[1652691971.3537],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:06:11"],"user":["Lars Schmid"],"umph":[1652691971.3677],"ok":[true],"chunk":[22],"ex":[2],"e.ind":[0],"code":["\n3\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:06:11"],"user":["Lars Schmid"],"umph":[1652691971.9523],"ok":[true],"chunk":[23],"ex":[2],"e.ind":[0],"code":["\nivreg(work01 ~ morekids | same_sex, data = Fertility) %>% \n  summary(diagnostics=TRUE)\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:06:12"],"user":["Lars Schmid"],"umph":[1652691972.3559],"ok":[true],"chunk":[24],"ex":[2],"e.ind":[0],"code":["\nivreg(work01 ~ morekids | same_sex, data = Fertility) %>% \n  summary()\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:06:12"],"user":["Lars Schmid"],"umph":[1652691972.3649],"ok":[false],"chunk":[25],"ex":[2],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_f_2."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:06:36"],"user":["Lars Schmid"],"umph":[1652691996.1067],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:06:36"],"user":["Lars Schmid"],"umph":[1652691996.1207],"ok":[true],"chunk":[25],"ex":[2],"e.ind":[0],"code":["\n2\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:06:36"],"user":["Lars Schmid"],"umph":[1652691996.1307],"ok":[false],"chunk":[26],"ex":[2],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_g."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:07:21"],"user":["Lars Schmid"],"umph":[1652692041.3078],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:07:21"],"user":["Lars Schmid"],"umph":[1652692041.3218],"ok":[false],"chunk":[26],"ex":[2],"e.ind":[1],"code":["\nc(4,5)\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_g."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:07:33"],"user":["Lars Schmid"],"umph":[1652692053.9421],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:07:33"],"user":["Lars Schmid"],"umph":[1652692053.9561],"ok":[false],"chunk":[26],"ex":[2],"e.ind":[1],"code":["\nc(1,2)\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_g."]}
+,
+{"type":["hint"],"time":["2022-05-16 11:07:39"],"user":["Lars Schmid"],"umph":[1652692059.2251],"ok":[true],"chunk":[26],"ex":[2],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:07:52"],"user":["Lars Schmid"],"umph":[1652692072.5169],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:07:52"],"user":["Lars Schmid"],"umph":[1652692072.5309],"ok":[false],"chunk":[26],"ex":[2],"e.ind":[1],"code":["\nc(1,2,4,5)\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_g."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:08:07"],"user":["Lars Schmid"],"umph":[1652692087.3246],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:08:07"],"user":["Lars Schmid"],"umph":[1652692087.3387],"ok":[false],"chunk":[26],"ex":[2],"e.ind":[1],"code":["\nc(3)\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_g."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:08:20"],"user":["Lars Schmid"],"umph":[1652692100.2103],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:08:20"],"user":["Lars Schmid"],"umph":[1652692100.2243],"ok":[true],"chunk":[26],"ex":[2],"e.ind":[0],"code":["\nc(1,2,3)\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:08:20"],"user":["Lars Schmid"],"umph":[1652692100.2353],"ok":[false],"chunk":[6],"ex":[1],"e.ind":[1],"code":["\"überschätzen\"\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_f."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:08:31"],"user":["Lars Schmid"],"umph":[1652692111.4251],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:08:31"],"user":["Lars Schmid"],"umph":[1652692111.4402],"ok":[false],"chunk":[26],"ex":[2],"e.ind":[1],"code":["\nc(1,2,3,4,5)\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_g."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:08:47"],"user":["Lars Schmid"],"umph":[1652692127.3147],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:08:47"],"user":["Lars Schmid"],"umph":[1652692127.3297],"ok":[false],"chunk":[26],"ex":[2],"e.ind":[1],"code":["\nc(1,2,4)\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_g."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:08:57"],"user":["Lars Schmid"],"umph":[1652692137.0425],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:08:57"],"user":["Lars Schmid"],"umph":[1652692137.0585],"ok":[false],"chunk":[26],"ex":[2],"e.ind":[1],"code":["\nc(1,2,5)\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_g."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:09:08"],"user":["Lars Schmid"],"umph":[1652692148.7612],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:09:08"],"user":["Lars Schmid"],"umph":[1652692148.7762],"ok":[false],"chunk":[26],"ex":[2],"e.ind":[1],"code":["\nc(1,2,3,4)\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_g."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:09:18"],"user":["Lars Schmid"],"umph":[1652692158.6319],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:09:18"],"user":["Lars Schmid"],"umph":[1652692158.647],"ok":[false],"chunk":[26],"ex":[2],"e.ind":[1],"code":["\nc(1,2,3,5)\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_g."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:09:33"],"user":["Lars Schmid"],"umph":[1652692173.2236],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:09:33"],"user":["Lars Schmid"],"umph":[1652692173.2389],"ok":[false],"chunk":[26],"ex":[2],"e.ind":[1],"code":["\nc(1,3)\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_g."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:09:43"],"user":["Lars Schmid"],"umph":[1652692183.7194],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:09:43"],"user":["Lars Schmid"],"umph":[1652692183.7364],"ok":[false],"chunk":[26],"ex":[2],"e.ind":[1],"code":["\nc(1,3,4)\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_g."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:09:52"],"user":["Lars Schmid"],"umph":[1652692192.9301],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:09:52"],"user":["Lars Schmid"],"umph":[1652692192.9446],"ok":[false],"chunk":[26],"ex":[2],"e.ind":[1],"code":["\nc(1,3,5)\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_g."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:10:03"],"user":["Lars Schmid"],"umph":[1652692203.2705],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:10:03"],"user":["Lars Schmid"],"umph":[1652692203.2845],"ok":[false],"chunk":[26],"ex":[2],"e.ind":[1],"code":["\nc(1,3,4,5)\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_g."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:10:13"],"user":["Lars Schmid"],"umph":[1652692213.1757],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:10:13"],"user":["Lars Schmid"],"umph":[1652692213.1918],"ok":[false],"chunk":[26],"ex":[2],"e.ind":[1],"code":["\nc(1,4)\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_g."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:10:22"],"user":["Lars Schmid"],"umph":[1652692222.1196],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:10:22"],"user":["Lars Schmid"],"umph":[1652692222.1336],"ok":[false],"chunk":[26],"ex":[2],"e.ind":[1],"code":["\nc(1,4,5)\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_g."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:10:32"],"user":["Lars Schmid"],"umph":[1652692232.5173],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:10:32"],"user":["Lars Schmid"],"umph":[1652692232.5323],"ok":[false],"chunk":[26],"ex":[2],"e.ind":[1],"code":["\nc(1,5)\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_g."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:10:41"],"user":["Lars Schmid"],"umph":[1652692241.656],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:10:41"],"user":["Lars Schmid"],"umph":[1652692241.671],"ok":[false],"chunk":[26],"ex":[2],"e.ind":[1],"code":["\nc(1)\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_g."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:10:50"],"user":["Lars Schmid"],"umph":[1652692250.832],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:10:50"],"user":["Lars Schmid"],"umph":[1652692250.846],"ok":[false],"chunk":[26],"ex":[2],"e.ind":[1],"code":["\nc(2)\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_g."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:10:58"],"user":["Lars Schmid"],"umph":[1652692258.6337],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:10:58"],"user":["Lars Schmid"],"umph":[1652692258.6477],"ok":[false],"chunk":[26],"ex":[2],"e.ind":[1],"code":["\nc(4)\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_g."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:11:06"],"user":["Lars Schmid"],"umph":[1652692266.3965],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:11:06"],"user":["Lars Schmid"],"umph":[1652692266.4105],"ok":[false],"chunk":[26],"ex":[2],"e.ind":[1],"code":["\nc(5)\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_g."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:11:16"],"user":["Lars Schmid"],"umph":[1652692276.8672],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:11:16"],"user":["Lars Schmid"],"umph":[1652692276.8802],"ok":[false],"chunk":[26],"ex":[2],"e.ind":[1],"code":["\nc(2,3)\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_g."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:11:26"],"user":["Lars Schmid"],"umph":[1652692286.3833],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:11:26"],"user":["Lars Schmid"],"umph":[1652692286.3973],"ok":[false],"chunk":[26],"ex":[2],"e.ind":[1],"code":["\nc(2,3,4)\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_g."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:11:35"],"user":["Lars Schmid"],"umph":[1652692295.0599],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:11:35"],"user":["Lars Schmid"],"umph":[1652692295.0739],"ok":[false],"chunk":[26],"ex":[2],"e.ind":[1],"code":["\nc(2,3,5)\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_g."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:11:50"],"user":["Lars Schmid"],"umph":[1652692310.9077],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:11:50"],"user":["Lars Schmid"],"umph":[1652692310.9217],"ok":[false],"chunk":[26],"ex":[2],"e.ind":[1],"code":["\nc(2,3,4,5)\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_g."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:12:03"],"user":["Lars Schmid"],"umph":[1652692323.6498],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:12:03"],"user":["Lars Schmid"],"umph":[1652692323.6638],"ok":[false],"chunk":[26],"ex":[2],"e.ind":[1],"code":["\nc(2,4)\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_g."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:12:11"],"user":["Lars Schmid"],"umph":[1652692331.7048],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:12:11"],"user":["Lars Schmid"],"umph":[1652692331.7331],"ok":[false],"chunk":[26],"ex":[2],"e.ind":[1],"code":["\nc(2,4,5)\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_g."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:12:21"],"user":["Lars Schmid"],"umph":[1652692341.3241],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:12:21"],"user":["Lars Schmid"],"umph":[1652692341.3391],"ok":[false],"chunk":[26],"ex":[2],"e.ind":[1],"code":["\nc(2,5)\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_g."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:12:36"],"user":["Lars Schmid"],"umph":[1652692356.4901],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:12:36"],"user":["Lars Schmid"],"umph":[1652692356.5041],"ok":[false],"chunk":[26],"ex":[2],"e.ind":[1],"code":["\nc(3)\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_g."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:12:45"],"user":["Lars Schmid"],"umph":[1652692365.6922],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:12:45"],"user":["Lars Schmid"],"umph":[1652692365.7052],"ok":[false],"chunk":[26],"ex":[2],"e.ind":[1],"code":["\nc(3,4)\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_g."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:12:54"],"user":["Lars Schmid"],"umph":[1652692374.2991],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:12:54"],"user":["Lars Schmid"],"umph":[1652692374.3131],"ok":[false],"chunk":[26],"ex":[2],"e.ind":[1],"code":["\nc(3,4,5)\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_g."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:13:04"],"user":["Lars Schmid"],"umph":[1652692384.0588],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:13:04"],"user":["Lars Schmid"],"umph":[1652692384.0718],"ok":[false],"chunk":[26],"ex":[2],"e.ind":[1],"code":["\nc(3,5)\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_g."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:13:11"],"user":["Lars Schmid"],"umph":[1652692391.7336],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:13:11"],"user":["Lars Schmid"],"umph":[1652692391.7467],"ok":[false],"chunk":[26],"ex":[2],"e.ind":[1],"code":["\nc(3,5)\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_g."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:13:25"],"user":["Lars Schmid"],"umph":[1652692405.6933],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:13:25"],"user":["Lars Schmid"],"umph":[1652692405.7067],"ok":[false],"chunk":[26],"ex":[2],"e.ind":[1],"code":["\nc(4,5)\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_g."]}
+,
+{"type":["hint"],"time":["2022-05-16 11:13:30"],"user":["Lars Schmid"],"umph":[1652692410.5301],"ok":[true],"chunk":[26],"ex":[2],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:15:37"],"user":["Lars Schmid"],"umph":[1652692537.8567],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:15:37"],"user":["Lars Schmid"],"umph":[1652692537.87],"ok":[true],"chunk":[26],"ex":[2],"e.ind":[0],"code":["\nc(1,2,3)\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:15:37"],"user":["Lars Schmid"],"umph":[1652692537.88],"ok":[false],"chunk":[6],"ex":[1],"e.ind":[1],"code":["\"überschätzen\"\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_f."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:16:07"],"user":["Lars Schmid"],"umph":[1652692567.4674],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:16:07"],"user":["Lars Schmid"],"umph":[1652692567.4804],"ok":[false],"chunk":[6],"ex":[1],"e.ind":[1],"code":["\"überschätzen\"\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_f."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:16:41"],"user":["Lars Schmid"],"umph":[1652692601.866],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:16:41"],"user":["Lars Schmid"],"umph":[1652692601.879],"ok":[false],"chunk":[6],"ex":[1],"e.ind":[1],"code":["\"unterschätzen\"\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_f."]}
+,
+{"type":["hint"],"time":["2022-05-16 11:16:48"],"user":["Lars Schmid"],"umph":[1652692608.0066],"ok":[true],"chunk":[6],"ex":[1],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:17:09"],"user":["Lars Schmid"],"umph":[1652692629.8217],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:17:09"],"user":["Lars Schmid"],"umph":[1652692629.8347],"ok":[false],"chunk":[6],"ex":[1],"e.ind":[1],"code":["\n\"unterschätzen\"\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_f."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:17:30"],"user":["Lars Schmid"],"umph":[1652692650.6042],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:17:30"],"user":["Lars Schmid"],"umph":[1652692650.6183],"ok":[false],"chunk":[6],"ex":[1],"e.ind":[1],"code":["\n\"überschätzen\"\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_f."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:17:51"],"user":["Lars Schmid"],"umph":[1652692671.3193],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:17:51"],"user":["Lars Schmid"],"umph":[1652692671.3473],"ok":[false],"chunk":[6],"ex":[1],"e.ind":[1],"code":["\n\"überschätzen\"\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_f."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:18:06"],"user":["Lars Schmid"],"umph":[1652692686.645],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:18:06"],"user":["Lars Schmid"],"umph":[1652692686.658],"ok":[false],"chunk":[6],"ex":[1],"e.ind":[1],"code":["\n\"unterschätzen\"\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_f."]}
+,
+{"type":["hint"],"time":["2022-05-16 11:18:21"],"user":["Lars Schmid"],"umph":[1652692701.7336],"ok":[true],"chunk":[6],"ex":[1],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:18:53"],"user":["Lars Schmid"],"umph":[1652692733.1395],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:18:53"],"user":["Lars Schmid"],"umph":[1652692733.1555],"ok":[false],"chunk":[6],"ex":[1],"e.ind":[1],"code":["\n\"ueberschaetzen\"\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_f."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:19:08"],"user":["Lars Schmid"],"umph":[1652692748.1096],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:19:08"],"user":["Lars Schmid"],"umph":[1652692748.1226],"ok":[false],"chunk":[6],"ex":[1],"e.ind":[1],"code":["\n\"unterschaetzen\"\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_f."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:19:24"],"user":["Lars Schmid"],"umph":[1652692764.8911],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:19:24"],"user":["Lars Schmid"],"umph":[1652692764.9041],"ok":[false],"chunk":[6],"ex":[1],"e.ind":[1],"code":["\n\"unterschätzen\"\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_f."]}
+,
+{"type":["check_ps"],"time":["2022-05-16 11:19:41"],"user":["Lars Schmid"],"umph":[1652692781.0222],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:19:41"],"user":["Lars Schmid"],"umph":[1652692781.0352],"ok":[false],"chunk":[6],"ex":[1],"e.ind":[1],"code":["\n\"überschätzen\"\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_f."]}
+,
+{"type":["grade_ps"],"time":["2022-05-16 11:19:59"],"user":["Lars Schmid"],"umph":[1652692799.6057],"ok":[true]}
+,
+{"type":["init_ps"],"time":["2022-05-16 11:19:59"],"user":["Lars Schmid"],"umph":[1652692799.6167],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:19:59"],"user":["Lars Schmid"],"umph":[1652692799.6277],"ok":[true],"chunk":[1],"ex":[1],"e.ind":[0],"code":["\n2\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:19:59"],"user":["Lars Schmid"],"umph":[1652692799.6357],"ok":[true],"chunk":[2],"ex":[1],"e.ind":[0],"code":["\n\"nein\"\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:20:00"],"user":["Lars Schmid"],"umph":[1652692800.9755],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[0],"code":["thp <- read_csv(\"./data/THP_clean.csv\") %>%\n  select(newid, uc, depressed_1y, treat, age_baseline, age_baseline_sq, kids_no, famstruct_baseline, grandmother_baseline, edu_mo, edu_fa, employed_mo_baseline, incomeindex, depindex_0, mspss_tot)\n\nskim(thp)\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:20:01"],"user":["Lars Schmid"],"umph":[1652692801.0776],"ok":[true],"chunk":[4],"ex":[1],"e.ind":[0],"code":["thp_plots <- thp %>%\n  mutate(treat_factor = as.factor(ifelse(treat == 1 , \"Treatment\", \"Kontrolle\")),\n         depressed = as.factor(ifelse(depressed_1y == 0, \"keine Depressionen\", \"Depressionen\"))) %>%\n  filter( !is.na(depressed)) \nplot_prop_depression <- ggplot(thp_plots, aes(x = depressed, fill = treat_factor)) +\n  geom_bar(position = \"fill\") +\n  labs(x = NULL, y = \"Anteil an Depressionen\", fill = NULL) +\n  scale_fill_manual(values = c(\"darkblue\", \"darkred\"))\n\nplot_prop_depression\n\n\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:20:01"],"user":["Lars Schmid"],"umph":[1652692801.0856],"ok":[true],"chunk":[5],"ex":[1],"e.ind":[0],"code":["\n\"ja\"\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:20:01"],"user":["Lars Schmid"],"umph":[1652692801.0976],"ok":[false],"chunk":[6],"ex":[1],"e.ind":[1],"code":["\n\"überschätzen\"\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_f."]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:20:02"],"user":["Lars Schmid"],"umph":[1652692802.5615],"ok":[true],"chunk":[13],"ex":[2],"e.ind":[0],"code":["library(AER)\ndata(Fertility)\nhead(Fertility)\nskim(Fertility)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:20:02"],"user":["Lars Schmid"],"umph":[1652692802.5695],"ok":[true],"chunk":[14],"ex":[2],"e.ind":[0],"code":["\n2\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:20:03"],"user":["Lars Schmid"],"umph":[1652692803.0554],"ok":[true],"chunk":[15],"ex":[2],"e.ind":[0],"code":["Fertility <- Fertility %>%\n  mutate(work01 = case_when(work > 0 ~ 1,\n                            work == 0 ~ 0))\n\nreg1 <- lm(work01 ~ morekids, data = Fertility)\n\n\nsummary(reg1)\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:20:03"],"user":["Lars Schmid"],"umph":[1652692803.0644],"ok":[true],"chunk":[16],"ex":[2],"e.ind":[0],"code":["\n2\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:20:03"],"user":["Lars Schmid"],"umph":[1652692803.0984],"ok":[true],"chunk":[17],"ex":[2],"e.ind":[0],"code":["grViz('digraph G {\n\nx [label=\"erklärende Variable x\"]\ny [label=\"abhängige Variable y\"]\nz [label=\"Instrument z\"]\n\nx -> y [label=\"+\"];\nz -> x [label=\"+\"];\nz -> y [label=\"+\"];\n}')"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:20:03"],"user":["Lars Schmid"],"umph":[1652692803.1345],"ok":[true],"chunk":[18],"ex":[2],"e.ind":[0],"code":["grViz('digraph G {\n\nx [label=\"erklärende Variable x\"]\ny [label=\"abhängige Variable y\"]\nz [label=\"Instrument z\"]\n\nx -> y [label=\"-\"];\nz -> y [label=\"+\"];\n}')"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:20:03"],"user":["Lars Schmid"],"umph":[1652692803.1705],"ok":[true],"chunk":[19],"ex":[2],"e.ind":[0],"code":["grViz('digraph G {\n\nx [label=\"erklärende Variable x\"]\ny [label=\"abhängige Variable y\"]\nz [label=\"Instrument z\"]\n\nx -> y [label=\"-\"];\nz -> x [label=\"+\"];\n}')"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:20:03"],"user":["Lars Schmid"],"umph":[1652692803.1795],"ok":[true],"chunk":[20],"ex":[2],"e.ind":[0],"code":["\n3\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:20:04"],"user":["Lars Schmid"],"umph":[1652692804.1602],"ok":[true],"chunk":[21],"ex":[2],"e.ind":[0],"code":["Fertility <- Fertility %>%\n  mutate(morekids = ifelse(morekids== \"yes\", 1, 0)) %>%\n  mutate(afam = ifelse(afam== \"yes\", 1, 0)) %>%\n  mutate(same_sex = ifelse(gender1== gender2, 1, 0))\n  \nreg1 <-  Fertility %>%\n  lm(morekids ~ gender2, data=.)\n\nreg2 <- Fertility %>%\n  lm(morekids ~ afam, data=.)\n\n reg3 <- Fertility %>%\n  lm(morekids ~ same_sex, data=.)\n\n stargazer(reg1, reg2, reg3, type = \"text\", digits=3)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:20:04"],"user":["Lars Schmid"],"umph":[1652692804.1693],"ok":[true],"chunk":[22],"ex":[2],"e.ind":[0],"code":["\n3\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:20:04"],"user":["Lars Schmid"],"umph":[1652692804.764],"ok":[true],"chunk":[23],"ex":[2],"e.ind":[0],"code":["\nivreg(work01 ~ morekids | same_sex, data = Fertility) %>% \n  summary(diagnostics=TRUE)\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:20:04"],"user":["Lars Schmid"],"umph":[1652692804.9482],"ok":[true],"chunk":[24],"ex":[2],"e.ind":[0],"code":["\nivreg(work01 ~ morekids | same_sex, data = Fertility) %>% \n  summary()\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:20:04"],"user":["Lars Schmid"],"umph":[1652692804.9562],"ok":[true],"chunk":[25],"ex":[2],"e.ind":[0],"code":["\n2\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-05-16 11:20:04"],"user":["Lars Schmid"],"umph":[1652692804.9652],"ok":[true],"chunk":[26],"ex":[2],"e.ind":[0],"code":["\nc(1,2,3)\n"],"message":[""]}
+,
